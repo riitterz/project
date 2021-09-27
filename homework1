@@ -1,0 +1,45 @@
+//Домашнее задание
+
+// Задание 1
+//Квадратное уравнение ax2 + bx + c = 0
+let a: Double = 3
+let b: Double = 7
+let c: Double = 5
+
+let x1: Double
+let x2: Double
+
+let f: Double = b * b - 4 * a * c
+
+if (f > 0) {
+    x1 = -b + sqrt(f) / (2 * a)
+    x2 = -b - sqrt(f) / (2 * a)
+    print("Уравнение имеет 2 корня: x1 = \(x1), x2 = \(x2)")
+} else if (f == 0) {
+    x1 = -f / (2 * a)
+    print("Уравнение имеет 1 корень: x1 = \(x1)")
+} else {
+    print("Нет корней")
+}
+// Задание 2
+//1//
+let catet1 = 9
+let catet2 = 12
+
+var hypotenuse = sqrt (Double (catet1 * catet1 + catet2 * catet2))
+hypotenuse = Double(round(hypotenuse * 100)/100)
+
+let perimetr = Double(catet1) + Double(catet2) + hypotenuse
+
+let square = Double(catet1*catet2)/2
+
+print("При заданых катетах \(catet1) и \(catet2), гипотенуза равна \(hypotenuse), периметр равен \(perimetr), площадь равна \(square)")
+//Задание 3
+var summa: Double = 5000
+var procent: Double = 7
+summa = summa + (summa * procent/100);
+summa += (summa * procent/100);
+summa += (summa * procent/100);
+summa += (summa * procent/100);
+summa += (summa * procent/100);
+print("Через 5 лет вклад будет составлять \(summa)")
